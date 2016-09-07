@@ -1,0 +1,14 @@
+package br.com.junior.jdbc.dao;
+
+import java.sql.Connection;
+import br.com.junior.jdbc.ConnectionFactory;
+
+//Gerencia a conexão e insere Contatos no banco de dados,
+public class ContatoDao {
+
+	private Connection connection;
+	
+	public ContatoDao() throws ClassNotFoundException{
+		this.connection = new ConnectionFactory().getConnection();
+	}
+}
