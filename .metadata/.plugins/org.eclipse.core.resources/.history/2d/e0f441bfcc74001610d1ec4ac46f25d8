@@ -47,7 +47,7 @@ public class ContatoDao {
 	}
 	
 	//Lista os contatos
-	public List<Contato> getLista() throws DAOException{
+	public List<Contato> getLista(){
 		try {
 			List<Contato>contatos = new ArrayList<Contato>();
 			PreparedStatement stmt = this.connection.prepareStatement("select * from contatos");
@@ -63,7 +63,7 @@ public class ContatoDao {
 				//montando a data através do Calendar
 				Calendar data = Calendar.getInstance();
 				data.setTime(rs.getDate("dataNascimento"));
-				contato.setDataNascimento(data);
+				
 				//adicionando objeto à lista
 				contatos.add(contato);				
 			}
@@ -71,8 +71,8 @@ public class ContatoDao {
 			stmt.close();
 			return contatos;
 			
-		} catch (Exception e) {
-			throw new DAOException(e);
+		} catch (DAOException ex) {
+			throw new DAOException();
 		}
 	}
 }

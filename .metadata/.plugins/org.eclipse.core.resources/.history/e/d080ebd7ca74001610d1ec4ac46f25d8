@@ -1,0 +1,15 @@
+package br.com.junior.jdbc.dao;
+
+import java.sql.SQLException;
+
+
+public class DAOException extends RuntimeException {
+        /**
+	 * 
+	 */
+	private static final long serialVersionUID = -9206960287310077969L;
+
+		public void getException(Exception e){
+                System.out.println(e);
+        }
+}
