@@ -27,7 +27,7 @@ public class ContatoDao {
 		
 		try {
 			
-			//pre pared statement para inserção
+			//prepared statement para inserção
 			PreparedStatement stmt = connection.prepareStatement(sql);
 			
 			//seta os valores
