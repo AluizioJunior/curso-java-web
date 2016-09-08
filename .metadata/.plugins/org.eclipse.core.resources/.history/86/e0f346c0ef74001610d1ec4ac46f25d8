@@ -1,0 +1,15 @@
+package br.com.junior.jdbc.teste;
+
+import br.com.junior.jdbc.modelo.Contato;
+
+public class TestaAltera {
+
+	public static void main(String[] args) {
+		Long id = 1;
+		Contato contato = new Contato();
+		contato.setId(id);
+		
+
+	}
+
+}

@@ -5,7 +5,24 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-09-06T03:35:24Z</updated>
+  <updated>2016-09-07T19:36:01Z</updated>
+  <entry>
+    <title>Spring Session 1.2.2 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/09/07/spring-session-1-2-2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2016-09-07:2606</id>
+    <updated>2016-09-07T19:36:01Z</updated>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce the release of Spring Session 1.2.2.RELEASE. &lt;a href="https://github.com/spring-projects/spring-session/issues?q=milestone%3A1.2.2"&gt;This release contains&lt;/a&gt; numerous bug fixes and trivial enhancements. Some of the highlights include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixes and improvements for supporting &lt;a href="http://docs.spring.io/spring-session/docs/current/reference/html5/#httpsession-multi"&gt;multiple sessions&lt;/a&gt; in the same browser when working with Tomcat 8.5 &lt;a href="https://github.com/spring-projects/spring-session/issues/605"&gt;#605&lt;/a&gt; &lt;a href="https://github.com/spring-projects/spring-session/issues/611"&gt;#611&lt;/a&gt; &lt;a href="https://github.com/spring-projects/spring-session/issues/615"&gt;#615&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Improvements for JDBC support to work with DB2 &lt;a href="https://github.com/spring-projects/spring-session/pull/600"&gt;#600&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-session/issues/594"&gt;Unregistered GemFire Instantiator causes deserialization issues on app restarts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-session/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-session/docs/current/reference/html5/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-session"&gt;Help&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - September 6th, 2016</title>
     <link rel="alternate" href="https://spring.io/blog/2016/09/06/this-week-in-spring-september-6th-2016" />
@@ -908,35 +925,5 @@ public class MySqlApplication {&#xD;
   &lt;li&gt;Amazon AWS - Generates Access key and secret key to be used with Spring Cloud AWS&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can view a complete example in our examples repository at &lt;a href="https://github.com/mp911de/spring-cloud-vault-config-samples/tree/master/mysql"&gt;https://github.com/mp911de/spring-cloud-vault-config-samples&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 4.1.2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/08/12/spring-security-4-1-2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2016-08-12:2584</id>
-    <updated>2016-08-12T14:51:50Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I&amp;#8217;m pleased to announce the release of Spring Security 4.1.2.RELEASE which resolves some minor issues including fixes for the new &lt;a href="http://docs.spring.io/spring-security/site/docs/4.1.x/reference/htmlsingle/#mvc-requestmatcher"&gt;MvcRequestMatcher&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For details refer to the &lt;a href="https://github.com/spring-projects/spring-security/issues?q=is%3Aclosed+milestone%3A4.1.2"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="contributions" class="sect0"&gt;&lt;a class="anchor" href="#contributions"&gt;&lt;/a&gt;Contributions&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Without the community we couldn&amp;#8217;t be the successful project we are today. I&amp;#8217;d like to thank everyone that created issues &amp;amp; provided feedback.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="feedback-please" class="sect0"&gt;&lt;a class="anchor" href="#feedback-please"&gt;&lt;/a&gt;Feedback Please&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;If you have feedback on this release, I encourage you to reach out via &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/issues"&gt;GitHub Issues&lt;/a&gt;, or via the comments section. You can also ping me &lt;a href="https://twitter.com/rob_winch"&gt;@rob_winch&lt;/a&gt; or Joe &lt;a href="https://twitter.com/joe_grandja"&gt;@joe_grandja&lt;/a&gt; on Twitter.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Of course the best feedback comes in the form of &lt;a href="https://github.com/spring-projects/spring-security/blob/master/CONTRIBUTING.md"&gt;contributions&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.1.2.RELEASE/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/4.1.2.RELEASE/guides/html5/"&gt;Guides&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

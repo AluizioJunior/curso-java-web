@@ -1,0 +1,25 @@
+package br.com.junior.jdbc.teste;
+
+import br.com.junior.jdbc.dao.ContatoDao;
+import br.com.junior.jdbc.modelo.Contato;
+
+public class TestaAltera {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		Contato contato = new Contato();
+		contato.setId((long) 1);
+		contato.setNome("");
+		contato.setEmail("");
+		contato.setEndereco("");
+		contato.setDataNascimento(null);
+		
+		ContatoDao dao = new ContatoDao();
+		dao.altera(contato);
+		
+		if(dao.altera(contato)){
+			System.out.println("Dados alterados com sucesso!");	
+		}else{
+			System.out.println("Não foi possível alterar!");
+		}	
+	}
+}
