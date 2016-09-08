@@ -101,14 +101,15 @@ public class ContatoDao {
 	//Remove um registro
 	public void remove(Contato contato){
 		try {
-			PreparedStatement stmt = connection.prepareStatement("delete from contatos where id=?");
+			PreparedStatement stmt = connection.prepareStatement("delete"+
+		"from contatos where id?");
 			stmt.setLong(1, contato.getId());
 			stmt.execute();
 			stmt.close();
 			System.out.println("Removido com sucesso!!!");
 		} catch (SQLException e) {
 			System.out.println("Erro ao remover registro!!!");
-			throw new RuntimeException(e);
+			//throw new RuntimeException(e);
 		}
 	}
 	
